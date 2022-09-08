@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="contain">
+            <section class="container">
+                <div id="title">
+                    <h1>Conversor de Moedas</h1>
+                </div>
+
+
+
+                <div class="currency">
+                    <p class="choise-currency"><label for="name">Valor em Real</label></p>
+                    <input type="number" id="valor" placeholder="0" value="" required/>
+
+                </div>
+
+                <div id="options">
+                    <select name="moedas" id="moedas">
+                    <option value="0.0" disabled selected>Escolha a Moeda</option>
+                    <option value="5.22">Dolar</option>
+                    <option value="5.21">Euro</option>
+                    <option value="100145,00">Bitcoins</option>
+                </select>
+                </div>
+
+
+
+                <div class="rate-container">
+                    <button class='btn-Converter' id="btn" onClick="converter()">Converter</button>
+                    <button class='btn-Converter' id="btn" onClick="zerar()">Limpar</button>
+                </div>
+
+
+
+                <div class="rate" id="rate"></div>
+
+
+            </section>
+
+            <div id="imagemMoeda">
+                <img src="https://www.oliberal.com/image/contentid/policy:1.537263:1652955332/dolar.jpg?f=2x1&$p$f=359482c&w=1500&$w=f075b93" alt="" id="eua">
+                <img src="https://thumbs.dreamstime.com/b/o-homem-de-neg%C3%B3cio-est%C3%A1-guardando-o-dinheiro-f%C3%A3-de-cinq%C3%BC%C3%AAnta-euro-pessoa-conta-o-dinheiro-m%C3%A3os-do-homem-de-neg%C3%B3cios-e-77586798.jpg" alt="" id="euro">
+                <img src="https://media.seudinheiro.com/cdn-cgi/image/fit=contain,width=640&,format=auto/uploads/2022/05/bitcoin-BTC-amplia-perdas-da-semana-e-criptomoedas-sao-negociads-em-queda-hoje.--628x353.png" alt="" id="bitcoin">
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
